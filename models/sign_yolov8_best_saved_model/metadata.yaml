@@ -1,0 +1,29 @@
+description: Ultralytics sign_YOLOv8_best model trained on datasets/speed.v1i.yolov8/data.yaml
+author: Ultralytics
+license: AGPL-3.0 https://ultralytics.com/license
+date: '2024-03-22T10:10:36.658539'
+version: 8.0.184
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: '.65'
+  1: '.75'
+  2: '.90'
+  3: '100'
+  4: '105'
+  5: '115'
+  6: '50'
+  7: '55'
+  8: '60'
+  9: '65'
+  10: '70'
+  11: '75'
+  12: '80'
+  13: '85'
+  14: X25
+  15: X30
+  16: X40

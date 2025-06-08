@@ -1,0 +1,14 @@
+# Base requirements for railway detection system
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.22.2
+matplotlib>=3.3.0
+pyyaml>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+tqdm>=4.64.0
+pandas>=1.1.4
+seaborn>=0.11.0
+psutil
+py-cpuinfo
+thop>=0.1.1

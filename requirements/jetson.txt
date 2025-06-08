@@ -1,0 +1,31 @@
+# Jetson-specific requirements
+# Note: Most Jetson packages should be installed via the JetPack SDK
+# or through system package managers.
+
+-r base.txt
+
+# Optional: PaddleOCR for text recognition
+# Install only if needed
+paddleocr>=2.6.0
+
+# NOTE: For Jetson devices, PyTorch and TorchVision must be installed manually
+# Follow these steps:
+
+# 1. Install JetPack 5.0.2 first
+# 2. Install PyTorch for Jetson:
+#    wget https://developer.download.nvidia.com/compute/redist/jp/v502/pytorch/torch-1.13.0a0+d0d6b1f2.nv22.10-cp38-cp38-linux_aarch64.whl
+#    sudo apt-get install libopenblas-base libopenmpi-dev libomp-dev
+#    pip3 install numpy torch-1.13.0a0+d0d6b1f2.nv22.10-cp38-cp38-linux_aarch64.whl
+
+# 3. Build TorchVision from source:
+#    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
+#    git clone --branch v0.13.0 https://github.com/pytorch/vision torchvision
+#    cd torchvision
+#    export BUILD_VERSION=0.13.0
+#    python3 setup.py install --user
+
+# 4. Install additional packages:
+#    pip install opencv-python
+
+# WARNING: PaddleOCR may not work on Jetson devices
+# OCR functionality will be limited if PaddleOCR is not available
